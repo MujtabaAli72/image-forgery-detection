@@ -1,29 +1,27 @@
-# Image Forgery Detection System
-
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+[Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.12-blue.svg)
 ![React](https://img.shields.io/badge/react-18.2.0-blue.svg)
 ![TypeScript](https://img.shields.io/badge/typescript-5.3.3-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-An advanced AI-powered image forgery detection system using **Error Level Analysis (ELA)** and **Deep Learning** techniques. Built by **Mujtaba Ali** ([m.elya1412@gmail.com](mailto:m.elya1412@gmail.com)).
+An advanced AI-powered image forgery detection system using *Error Level Analysis (ELA)* and *Deep Learning* techniques. Built by *Mujtaba Ali* ([m.elya1412@gmail.com](mailto:m.elya1412@gmail.com)).
 
 ## Features
 
-- **Error Level Analysis**: Detects compression inconsistencies in images
-- **Deep Learning Classification**: CNN model with 93.56% accuracy
-- **Real-time Detection**: Instant results with confidence scores
-- **Visual Highlighting**: Shows manipulated regions in images
-- **Professional UI**: Modern, animated frontend built with React and Tailwind CSS
-- **RESTful API**: Flask backend for easy integration
+- *Error Level Analysis*: Detects compression inconsistencies in images
+- *Deep Learning Classification*: CNN model with 93.56% accuracy
+- *Real-time Detection*: Instant results with confidence scores
+- *Visual Highlighting*: Shows manipulated regions in images
+- *Professional UI*: Modern, animated frontend built with React and Tailwind CSS
+- *RESTful API*: Flask backend for easy integration
 
 ## Performance Metrics
 
-- **Overall Accuracy**: 93.56%
-- **Fake Image Detection**: 99.48%
-- **Real Image Detection**: 91.22%
-- **Training Dataset**: 4,164 images (CASIA dataset)
-- **Detection Time**: < 1 second
+- *Overall Accuracy*: 93.56%
+- *Fake Image Detection*: 99.48%
+- *Real Image Detection*: 91.22%
+- *Training Dataset*: 4,164 images (CASIA dataset)
+- *Detection Time*: < 1 second
 
 ## Technology Stack
 
@@ -46,7 +44,7 @@ An advanced AI-powered image forgery detection system using **Error Level Analys
 
 ## Project Structure
 
-```
+
 img/
 ├── backend/
 │   ├── app.py                 # Flask API server
@@ -73,7 +71,7 @@ img/
 │   └── tailwind.config.js      # Tailwind configuration
 ├── Copy_of_Image_forgery_Detection.ipynb  # Training notebook
 └── README.md
-```
+
 
 ## Installation & Setup
 
@@ -85,55 +83,55 @@ img/
 ### Backend Setup
 
 1. Navigate to the backend directory:
-```bash
+bash
 cd backend
-```
+
 
 2. Create a virtual environment (recommended):
-```bash
+bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
+
 
 3. Install Python dependencies:
-```bash
+bash
 pip install -r requirements.txt
-```
 
-4. **Important**: Add your trained model file `my_model.keras` to the backend directory
+
+4. *Important*: Add your trained model file my_model.keras to the backend directory
 
 5. Start the Flask server:
-```bash
+bash
 python app.py
-```
 
-The backend API will run at `http://localhost:5000`
+
+The backend API will run at http://localhost:5000
 
 ### Frontend Setup
 
 1. Navigate to the frontend directory:
-```bash
+bash
 cd frontend
-```
+
 
 2. Install dependencies:
-```bash
+bash
 npm install
-```
+
 
 3. Start the development server:
-```bash
+bash
 npm start
-```
 
-The frontend will open at `http://localhost:3000`
+
+The frontend will open at http://localhost:3000
 
 ## Usage
 
-1. **Start Backend**: Ensure the Flask server is running on port 5000
-2. **Start Frontend**: Access the React app at http://localhost:3000
-3. **Upload Image**: Navigate to the Detection page and upload an image
-4. **View Results**: Get instant results with confidence score and ELA visualization
+1. *Start Backend*: Ensure the Flask server is running on port 5000
+2. *Start Frontend*: Access the React app at http://localhost:3000
+3. *Upload Image*: Navigate to the Detection page and upload an image
+4. *View Results*: Get instant results with confidence score and ELA visualization
 
 ## How It Works
 
@@ -162,12 +160,12 @@ The frontend will open at `http://localhost:3000`
 ## API Endpoints
 
 ### Health Check
-```
+
 GET /api/health
-```
+
 
 ### Predict Image
-```
+
 POST /api/predict
 Content-Type: multipart/form-data
 
@@ -181,12 +179,12 @@ Response:
   "is_fake": true,
   "ela_image": "data:image/png;base64,..."
 }
-```
+
 
 ### About
-```
+
 GET /api/about
-```
+
 
 ## Model Training
 
@@ -197,13 +195,13 @@ To train the model yourself:
    - [CASIA2](https://www.kaggle.com/datasets/sophatvathana/casia-dataset)
 
 2. Open the Jupyter notebook:
-```bash
+bash
 jupyter notebook Copy_of_Image_forgery_Detection.ipynb
-```
+
 
 3. Run all cells to train the model
 
-4. The trained model will be saved as `my_model.keras`
+4. The trained model will be saved as my_model.keras
 
 ## Screenshots
 
@@ -218,10 +216,10 @@ Information about the developer and project achievements.
 
 ## Dataset
 
-This project uses the **CASIA Image Tampering Detection Evaluation Database**:
-- **Authentic Images**: 2,100
-- **Tampered Images**: 2,064
-- **Types of Forgery**: Copy-move, splicing, removal
+This project uses the *CASIA Image Tampering Detection Evaluation Database*:
+- *Authentic Images*: 2,100
+- *Tampered Images*: 2,064
+- *Types of Forgery*: Copy-move, splicing, removal
 
 ## Performance Optimization
 
@@ -249,7 +247,7 @@ This project is licensed under the MIT License.
 
 ## Author
 
-**Mujtaba Ali**
+*Mujtaba Ali*
 - Email: [m.elya1412@gmail.com](mailto:m.elya1412@gmail.com)
 - Project: Image Forgery Detection using Deep Learning
 - Specialization: AI/ML Engineering, Computer Vision, Deep Learning
@@ -264,14 +262,14 @@ This project is licensed under the MIT License.
 
 If you use this project in your research, please cite:
 
-```bibtex
+bibtex
 @software{ali2024forgery,
   author = {Ali, Mujtaba},
   title = {Image Forgery Detection using Deep Learning and ELA},
   year = {2024},
   url = {https://github.com/yourusername/image-forgery-detection}
 }
-```
+
 
 ## Support
 
@@ -279,4 +277,4 @@ For questions or support, please contact [m.elya1412@gmail.com](mailto:m.elya141
 
 ---
 
-Made with ❤️ by Mujtaba Ali
+Made with ❤ by Mujtaba Ali
